@@ -6,4 +6,11 @@ db = client["zakhar"]
 
 col = db["zakhar"]
 
-x = col.insert_one("zakhar":{"My test data"})
+obj = {
+  "name":"zakhar"
+  "age":120,
+  "info":"student"
+}
+
+x = col.insert_one(obj)
+
